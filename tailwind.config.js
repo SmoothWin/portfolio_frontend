@@ -10,8 +10,13 @@ module.exports = {
       blue:"#0063cc",
       blue2:"#3396FF",
       grey:"#F5F5F5",
-      white:"#FEFCFB"
-    }
+      white:"#FEFCFB",
+      whitewhite:"#FFFFFF",
+      line:"#1D3249",
+    },
+    fontFamilty:{
+      "title":'Libre Franklin, sans-serif'
+    },
   },
   plugins: [],
 }
