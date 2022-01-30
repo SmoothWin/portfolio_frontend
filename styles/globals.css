@@ -8,6 +8,55 @@
   }
 }
 
+.😀:nth-child(1n){
+  animation: upanddown ease-in-out 15s infinite;
+}
+.😀:nth-child(2n){
+  animation: upanddown2 ease-in-out 15s infinite;
+}
+.😀:nth-child(3n){
+  animation: upanddown3 ease-in-out 15s infinite;
+}
+.😀:nth-child(4n){
+  animation: upanddown2 ease-in-out 8s infinite;
+}
+@keyframes upanddown {
+  0%{
+    transform: translatey(10%);
+  }
+  50%{
+    transform: translatey(50%);
+
+  }
+  100%{
+    transform: translatey(10%);
+  }
+}
+@keyframes upanddown2 {
+  0%{
+    transform: translatey(50%);
+  }
+  50%{
+    transform: translatey(25%);
+  }
+  100%{
+    transform: translatey(50%);
+  }
+}
+@keyframes upanddown3 {
+  0%{
+    transform: translatey(50%);
+  }
+  50%{
+    transform: translatey(10%);
+
+  }
+  100%{
+    transform: translatey(50%);
+  }
+}
+
+
 .title{
   font-family: 'Libre Franklin', sans-serif;
 }

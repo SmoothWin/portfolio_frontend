@@ -20,7 +20,7 @@ export default function Home() {
 
       <main className="flex">
         {/* <Sidebar/> */}
-        <div className="relative w-full mb-2 flex flex-col items-center justify-center text-black">
+        <div id='introduction' className="relative w-full mb-2 flex flex-col items-center justify-center text-black">
           <h2 className="text-black text-3xl title z-[101]">Hi, my name is</h2>
           <div className="flex items-center relative h-[90px] w-[150px] ">
                 <div className="text-4xl absolute bottom-[43px] left-[0px] text-blue2 title">Christian</div>
@@ -29,16 +29,20 @@ export default function Home() {
                   <div className="line w-[25px] h-[100px] bg-blue2 bottom-[0px] left-[200px] bg-line"></div>
                 </div>
           </div>
-          <div className='flex flex-col items-center md:flex-row md:justify-around md:items-start'>
-            <div className='w-[45%] max-w-[390px] min-w-[300px] text-justify mb-[20px] md:mb-[0px]'>
+          <div className='flex flex-col items-center md:flex-row md:justify-around md:items-start lg:max-w-[1000px] w-[80%] md:min-w-[800px]'>
+            <div className='w-[45%] max-w-[390px] min-w-[300px] text-justify title mb-[20px] md:mb-[0px]'>
               I am currently a <br/><span className='text-2xl text-blue2'>Fullstack</span><br/> <span className='text-4xl text-blue'>Web Developer</span> <br/>
-              working at
-              <a href="https://www.cryptureworld.com/" target="_blank" rel="noreferrer"> Crypture World Inc. </a>
-              assisting in development of frontend and backend services the company can benefit from.
+              working at <a href="https://www.cryptureworld.com/" target="_blank" rel="noreferrer" rel="noopener" className='underline text-black transition ease-in-out duration-300 hover:text-link'>Crypture World Inc.</a> assisting in the development of <span className='text-xl text-blue2'>frontend</span> and <span className='text-xl text-blue2'>backend</span> services.
             </div>
-            <div className='w-[45%] max-w-[390px] min-w-[300px] text-justify' >
-              Minim culpa voluptate ipsum veniam dolor ut minim ullamco. Quis adipisicing anim ut in non amet fugiat ex amet elit incididunt. Nulla do sint sint ut magna cupidatat anim irure do velit dolore sit. Magna veniam exercitation aliquip est pariatur deserunt aliquip sunt exercitation deserunt culpa incididunt culpa. Aliquip occaecat dolor ex duis. Ipsum esse cillum adipisicing sit deserunt laborum ex adipisicing aliquip ad. Aliqua eiusmod commodo aute id.
+            <div className='h-[400px] relative w-[45%] max-w-[390px] min-w-[300px] text-justify' >
+              <img className='😀 absolute z-[2] top-[0px] left-[-20px]' width={200} alt={"Project Crypture World"} src={"/images/project1.png"}/>
+              <img className='😀 absolute z-[1] top-[150px] left-[100px] blur-[0.1px]' width={200} alt={"Project Code Example"} src={"/images/project2.png"}/>
+              <img className='😀 absolute z-[1] top-[40px] left-[150px] blur-[0.2px]' width={150} alt={"Project Github Example"} src={"/images/project3.png"}/>
+              <img className='😀 absolute z-[0] top-[130px] left-[0px] blur-[0.8px]' width={150} alt={"Project Flask API Example"} src={"/images/project4.png"}/>
             </div>
+          </div>
+          <div>
+
           </div>
         </div>
         {/* 

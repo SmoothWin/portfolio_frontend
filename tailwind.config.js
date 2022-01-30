@@ -13,6 +13,7 @@ module.exports = {
       white:"#FEFCFB",
       whitewhite:"#FFFFFF",
       line:"#1D3249",
+      link:"#47cfff"
     },
     fontFamilty:{
       "title":'Libre Franklin, sans-serif'
