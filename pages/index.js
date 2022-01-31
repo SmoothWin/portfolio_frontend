@@ -28,12 +28,12 @@ export default function Home() {
           <div className="flex items-center relative h-[90px] w-[150px] mx-auto">
                 <div className="text-4xl absolute bottom-[43px] left-[0px] text-blue2 title">Christian</div>
                 <div className="text-3xl absolute bottom-[20px] left-[45px] text-blue title2">Chitanu</div>
-                <div className='lineaway bg-whitewhite h-[90px] z-[100] absolute bottom-[2px] w-[190px] flex items-center justify-start'>
+                <div className='absolute lineaway bg-whitewhite h-[90px] z-[100] bottom-[2px] w-[190px] flex items-center justify-start'>
                   <div className="line w-[25px] h-[100px] bg-blue2 bottom-[0px] left-[200px] bg-line"></div>
                 </div>
           </div>
-          <div className='flex flex-col items-center md:flex-row md:justify-between md:items-start lg:max-w-[1000px] w-[80%] lg:min-w-[770px] md:min-w-[720px]'>
-            <div className='w-[40%] max-w-[390px] min-w-[300px] text-justify title mb-[20px] md:mb-[0px]'>
+          <div className='flex flex-col mx-auto items-center md:flex-row md:justify-between md:items-start lg:max-w-[1000px] w-[80%] lg:min-w-[770px] md:min-w-[720px]'>
+            <div className='w-[40%] max-w-[390px] min-w-[320px] text-justify title mb-[20px] md:mb-[0px]'>
               I am currently a <br/><span className='text-2xl text-blue2'>Fullstack</span><br/> <span className='text-4xl text-blue'>Web Developer</span> <br/>
               working at <a href="https://www.cryptureworld.com/" target="_blank" rel="noreferrer" rel="noopener" className='underline text-black transition ease-in-out duration-300 hover:text-link'>Crypture World Inc.</a> assisting in the development of <span className='text-xl text-blue2'>frontend</span> and <span className='text-xl text-blue2'>backend</span> services.
             </div>
@@ -52,7 +52,7 @@ export default function Home() {
         <section className="relative w-full mb-10 flex flex-col items-center justify-center text-black w-full">
             <div className='lg:max-w-[1000px] mx-auto'>
             <h2 className="text-black text-sm title2 ml-5">How I work</h2>
-            <h2 className="text-black text-4xl title1 ml-10">Soft Skills</h2>
+            <h2 className="text-black text-4xl title1 ml-5">Soft Skills</h2>
             {/* introduce softskill */}
             <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5'>
               <div className='mx-auto w-[90%]'>
@@ -79,10 +79,32 @@ export default function Home() {
             </div>
         </section>
         <section className="relative w-full mb-2 flex flex-col items-center justify-center text-black w-full">
-            <div className='mx-auto w-[70%]'>
-            <h2 className="text-black text-4xl title1 mb-2">Hard Skills</h2>
+            <div className='w-[100%] max-w-[1000px]'>
+            <h2 className="text-black text-4xl title1 mb-2 text-center">Hard Skills</h2>
             {/* introduce hardskills (in progress)*/}
               <CarouselExport/>
+              <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5'>
+              <div className='mx-auto w-[90%]'>
+                <h2 className="text-black text-xl title">Autonomous</h2>
+                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
+              </div>
+              <div className='mx-auto w-[90%]'>
+                <h2 className="text-black text-xl title">Time Management</h2>
+                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
+              </div>
+              <div className='mx-auto w-[90%]'>
+                <h2 className="text-black text-xl title">Project Planning</h2>
+                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
+
+              </div>
+              <div className='mx-auto w-[90%]'>
+                <h2 className="text-black text-xl title">Creative Problem Solving</h2>
+                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
+
+              </div>
+
+              
+            </div>
             </div>
         </section>
         {/* 
