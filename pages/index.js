@@ -19,7 +19,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;500&display=swap" rel="stylesheet"/>
       </Head>
 
-      <main className="flex flex-col wrapper">
+      <main className="flex flex-col wrapper text-xl sm:text-2xl">
         {/* <Sidebar/> */}
         <div className='w-[100%] md:min-w-[760px]'>
         <section id='introductionm' className="lg:max-w-[1000px] mx-auto relative w-full mb-2 flex flex-col items-center justify-around text-black">
@@ -32,16 +32,17 @@ export default function Home() {
                   <div className="line w-[25px] h-[100px] bg-blue2 bottom-[0px] left-[200px] bg-line"></div>
                 </div>
           </div>
-          <div className='flex flex-col mx-auto items-center md:flex-row md:justify-between md:items-start lg:max-w-[1000px] w-[80%] lg:min-w-[770px] md:min-w-[720px]'>
-            <div className='w-[40%] max-w-[390px] min-w-[320px] text-justify title mb-[20px] md:mb-[0px]'>
-              I am currently a <br/><span className='text-2xl text-blue2'>Fullstack</span><br/> <span className='text-4xl text-blue'>Web Developer</span> <br/>
-              working at <a href="https://www.cryptureworld.com/" target="_blank" rel="noreferrer" rel="noopener" className='underline text-black transition ease-in-out duration-300 hover:text-link'>Crypture World Inc.</a> assisting in the development of <span className='text-xl text-blue2'>frontend</span> and <span className='text-xl text-blue2'>backend</span> services.
+          <div className='flex flex-col mx-auto items-center md:flex-row md:justify-between md:items-start lg:max-w-[1000px] w-[90%] lg:min-w-[770px] md:min-w-[720px]'>
+            <div className=' w-[55%] text-justify title mb-[20px] md:mb-[0px] md:mr-[20px] min-w-[300px]'>
+              I am currently a <br/><span className='text-5xl text-blue2'>Fullstack</span><br/> <span className='text-6xl text-blue'>Web Developer</span><br/>
+              working at <a href="https://www.cryptureworld.com/" target="_blank" rel="noreferrer" rel="noopener" className='underline text-black transition ease-in-out duration-300 hover:text-link'>Crypture World Inc.
+              </a> assisting in the development of <span className='text-3xl text-blue2'>frontend</span> and <span className='text-3xl text-blue2'>backend</span> services.
             </div>
             <div className='h-[400px] relative w-[60%] max-w-[390px] min-w-[300px] text-justify' >
-              <img className='😀 absolute z-[2] top-[0px] left-[0px]' width={200} alt={"Project Crypture World"} src={"/images/project1.png"}/>
-              <img className='😀 absolute z-[1] top-[150px] left-[180px] blur-[0.1px]' width={200} alt={"Project Code Example"} src={"/images/project2.png"}/>
-              <img className='😀 absolute z-[1] top-[40px] left-[200px] blur-[0.2px]' width={170} alt={"Project Github Example"} src={"/images/project3.png"}/>
-              <img className='😀 absolute z-[0] top-[130px] left-[20px] blur-[0.8px]' width={150} alt={"Project Flask API Example"} src={"/images/project4.png"}/>
+              <img className='😀 absolute z-[2] w-[170px] sm:w-[200px] top-[20px] left-[20px] sm:top-[0px] sm:left-[0px]' width={200} alt={"Project Crypture World"} src={"/images/project1.png"}/>
+              <img className='😀 absolute z-[1] blur-[0.1px] w-[170px] sm:w-[200px] top-[130px] left-[120px]  sm:top-[150px] sm:left-[180px]' width={200} alt={"Project Code Example"} src={"/images/project2.png"}/>
+              <img className='😀 absolute z-[1] top-[60px] left-[180px] sm:top-[40px] sm:left-[200px] blur-[0.2px] w-[120px] sm:w-[170px]' width={170} alt={"Project Github Example"} src={"/images/project3.png"}/>
+              <img className='😀 absolute z-[0] top-[150px] left-[20px] sm:top-[130px] sm:left-[20px] blur-[0.8px] w-[100px] sm:w-[150px]' width={150} alt={"Project Flask API Example"} src={"/images/project4.png"}/>
             </div>
           </div>
           <div>
@@ -51,8 +52,8 @@ export default function Home() {
         </section>
         <section className="relative w-full mb-10 flex flex-col items-center justify-center text-black w-full">
             <div className='lg:max-w-[1000px] mx-auto'>
-            <h2 className="text-black text-sm title2 ml-5">How I work</h2>
-            <h2 className="text-black text-4xl title1 ml-5">Soft Skills</h2>
+            <h2 className="text-black text-xl title2 ml-5">How I work</h2>
+            <h2 className="text-black text-6xl title1 ml-5">Soft Skills</h2>
             {/* introduce softskill */}
             <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5'>
               <div className='mx-auto w-[90%]'>
@@ -80,7 +81,7 @@ export default function Home() {
         </section>
         <section className="relative w-full mb-2 flex flex-col items-center justify-center text-black w-full">
             <div className='w-[100%] max-w-[1000px]'>
-            <h2 className="text-black text-4xl title1 mb-2 text-center">Hard Skills</h2>
+            <h2 className="text-black text-6xl title1 mb-2 text-center">Hard Skills</h2>
             {/* introduce hardskills (in progress)*/}
               <CarouselExport/>
               <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5'>

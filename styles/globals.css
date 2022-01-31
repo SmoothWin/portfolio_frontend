@@ -112,9 +112,9 @@ html, body{
   transform: translate(0,-50%);
   animation: toRight 20s linear infinite;
 }
-.infinite-scroll:hover{
+/* .infinite-scroll:hover{
   animation-play-state: paused;
-}
+} */
 
 @keyframes toRight{
   0%{
