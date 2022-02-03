@@ -68,7 +68,7 @@ export default function Home() {
                   <span className='font-bold'>Plan ahead.</span> In conceptualizing project roadmaps, I plan out the development process and construct specific deadlines. Since in the end it is on the customer's best interest to have a completed product and I always aim to deliver.
                 </div>
               </div>
-              {/* Last item will contain the  sm:col-span-2 sm:w-[50%] */}
+              {/* Last item will contain the  sm:col-span-2 sm:w-[50%]  so it'll be when (list.length % 2 == 0 && iteration == list.length - 1) */}
               <div id="gridItem" className='mx-auto w-[90%] text-xl sm:col-span-2 sm:w-[50%]'>
                 <h2 className="text-black text-3xl title font-bold">Creative Problem Solving</h2>
                 <div>
