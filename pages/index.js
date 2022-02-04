@@ -71,7 +71,7 @@ export default function Home() {
               <div id="gridItem" className='mx-auto w-[90%] text-xl' data-aos="fade-right" data-aos-offset="300">
                 <h2 className="text-black text-3xl title font-bold">Analytical Skills</h2>
                 <div>
-                  <span className='font-bold'>Find ideas.</span> Since designing the logic of a website can be approached in many ways, there are many strategies that are beneficial in delivering a feature. But not all ideas are fit for the product the customer wants. It is my responsibility to analyse solutions and find what is best for the business.
+                  <span className='font-bold'>Find ideas.</span> Since designing the logic of a website can be approached in many ways, there are many strategies that are beneficial in delivering a feature. But not all ideas are fit for the product the customer wants. It is my responsibility to analyse solutions and find what is best for the client.
                 </div>
               </div>
               <div id="gridItem" className='mx-auto w-[90%] text-xl' data-aos="fade-left" data-aos-offset="300">
@@ -95,13 +95,82 @@ export default function Home() {
         </section>
         <section className="relative w-full mb-2 flex flex-col items-center justify-center text-black w-full">
             <div className='w-[100%] max-w-[1200px]'>
-            <h2 className="text-black text-6xl title1 mb-2 text-center">Hard Skills</h2>
+            <h2 className="text-black text-6xl title1 mb-2 text-center">Projects</h2>
             {/* introduce hardskills (in progress)*/}
               <CarouselExport/>
-              <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 mt-5'>
+              <div className='grid grid-cols-1 gap-4 mt-5'>
+                
               <div className='mx-auto w-[90%]'>
-                <h2 className="text-black text-xl title">Autonomous</h2>
-                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
+                <h2 className="text-blue text-4xl title text-center md:text-left mb-5">Crypture World</h2>
+                <div className='flex flex-col md:flex-row max-w-[1200px] mb-7'>
+                  <div className='w-[100%] mx-auto flex flex-col items-center md:mr-3'>
+                    <img width={300} alt={"Project Crypture World"} src={"/images/project1.png"}/>
+                    <div className='title2 w-[300px] text-base flex justify-around items-end ml-[10px]'>
+                      <a target="_blank" rel='noopener noreferrer' className='flex items-end text-blue transition ease-in-out duration-300 hover:text-link' href="https://www.cryptureworld.com"><img style={{width:40}} src={'/images/computer-line.svg'}/>Preview</a> <span className='text-stone-500'>Private Repository</span>
+                    </div>
+                  </div>
+                  <div className='flex flex-col items-center md:items-start'>
+                    <p className='text-center md:text-left text-base w-[90%] max-w-[1200px]'>
+                      This app is hosted on a <a target="_blank" rel='noopener noreferrer'  className='text-blue transition ease-in-out duration-300 hover:text-link' href="https://aws.amazon.com/amplify">AWS Amplify plan</a> with a CI/CD pipeline activated supporting real time updates when the github repo gets updated
+                    </p>
+                    <div className='flex justify-between w-[60%] mt-6'>
+                      <div className='mr-4'>
+                      <h2>
+                        Technologies
+                      </h2>
+                      <ul className='marker:text-blue2 text-base list-disc ml-7'>
+                        <li>
+                          NextJS
+                        </li>
+                        <li>
+                          ReactJS
+                        </li>
+                        <li>
+                          CSS3
+                        </li>
+                        <li>
+                          HTML5
+                        </li>
+                        <li>
+                          WaxJs
+                        </li>
+                      </ul>
+                      </div>
+                      <div>
+                      <h2>
+                        Libraries
+                      </h2>
+                      <ul className='marker:text-blue2 text-base list-disc ml-7'>
+                        <li>
+                          I18Next
+                        </li>
+                        <li>
+                          Scroll-Out
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 md:mx-0 max-w-[1200px]'>
+                  
+                  <div className='md:mr-10 mb-3 max-w-[500px] mx-auto'>
+                    <h2>My Role</h2>
+                    <div className='text-base'>Cillum nisi cupidatat amet laborum ipsum mollit pariatur anim in aliquip ea occaecat nulla duis. Ex esse amet quis enim nulla laborum nulla ullamco eu. Esse dolore consectetur duis dolor pariatur. Velit mollit enim Lorem exercitation pariatur laborum laboris pariatur minim anim laborum Lorem ad labore. Dolor sint sunt exercitation cillum fugiat eu magna. Aliquip fugiat incididunt nisi in deserunt Lorem nulla excepteur.</div>
+                  </div>
+                  <div className='md:mr-10 mb-3 max-w-[500px] mx-auto'>
+                    <h2>Project Difficulties</h2>
+                    <div className='text-base'>Laboris excepteur est sunt anim aute nulla reprehenderit exercitation consectetur anim. Magna minim nisi nulla officia. Tempor sint dolor nisi irure voluptate nostrud quis sit labore. Elit consequat veniam consectetur tempor commodo sint cupidatat deserunt ullamco cupidatat cupidatat veniam. Ipsum laborum magna et pariatur irure ut in enim cillum. Tempor laborum minim ipsum eu in reprehenderit cillum cupidatat dolor id excepteur aliqua. Ut cupidatat irure nisi reprehenderit non in in esse nulla mollit enim laborum in consequat.</div>
+                  </div>
+                  <div className='md:mr-10 mb-3 max-w-[500px] mx-auto'>
+                    <h2>My Solution</h2>
+                    <div className='text-base'>Laboris excepteur est sunt anim aute nulla reprehenderit exercitation consectetur anim. Magna minim nisi nulla officia. Tempor sint dolor nisi irure voluptate nostrud quis sit labore. Elit consequat veniam consectetur tempor commodo sint cupidatat deserunt ullamco cupidatat cupidatat veniam. Ipsum laborum magna et pariatur irure ut in enim cillum. Tempor laborum minim ipsum eu in reprehenderit cillum cupidatat dolor id excepteur aliqua. Ut cupidatat irure nisi reprehenderit non in in esse nulla mollit enim laborum in consequat.</div>
+                  </div>
+                  <div className='md:mr-10 mb-3 max-w-[500px] mx-auto'>
+                    <h2>Notable Features</h2>
+                    <div className='text-base'>Laboris excepteur est sunt anim aute nulla reprehenderit exercitation consectetur anim. Magna minim nisi nulla officia. Tempor sint dolor nisi irure voluptate nostrud quis sit labore. Elit consequat veniam consectetur tempor commodo sint cupidatat deserunt ullamco cupidatat cupidatat veniam. Ipsum laborum magna et pariatur irure ut in enim cillum. Tempor laborum minim ipsum eu in reprehenderit cillum cupidatat dolor id excepteur aliqua. Ut cupidatat irure nisi reprehenderit non in in esse nulla mollit enim laborum in consequat.</div>
+                  </div>
+                </div>
               </div>
               <div className='mx-auto w-[90%]'>
                 <h2 className="text-black text-xl title">Time Management</h2>
