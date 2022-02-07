@@ -20,7 +20,7 @@ const CarouselExport = ()=>{
   },[mounted])
 
   return (
-    <div className="relative w-[80%] mx-auto h-[60px] rounded-full overflow-hidden">
+    <div className="relative w-[80%] mx-auto h-[60px] rounded-full overflow-hidden" data-aos="fade-bottom" data-aos-offset="300">
       <div className={`flex absolute left-0 infinite-scroll`} style={{width:`${itemLength*50}%`}}>
         <div className="flex justify-around w-[50%]">
             <img width={50} alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
