@@ -124,3 +124,34 @@ html, body{
     left:var(--animation_length);
   }
 }
+
+.d-show{
+  opacity: 1;
+  padding: 5px;
+  border: 2px solid;
+  transition: opacity 1s ease-in-out, border 0.3s ease-in;
+}
+.d-show:hover{
+  border: #3396FF 5px solid;
+}
+.d-hide{
+  height: 50px;
+  opacity: 0;
+}
+.d-show-delay{
+  position: absolute;
+  top:58%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.d-hide-delay{
+  position: absolute;
+  top:58%;
+  left:-250%;
+  transform: translate(-50%,-50%);
+  
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, left 0.1s 0.4s linear;
+}
