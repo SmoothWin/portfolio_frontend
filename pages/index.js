@@ -6,8 +6,11 @@ import Aos from 'aos'
 
 //custom components
 import Sidebar from "../components/sidebar/Sidebar"
-import CarouselExport from '../components/Carousel'
-import ProjectInfo from '../components/projects/projectinfo'
+
+import Introduction from '../components/Sections/Introduction'
+import SoftSkills from '../components/Sections/SoftSkills'
+import Projects from '../components/Sections/Projects'
+import Footer from '../components/Sections/Footer'
 
 export default function Home() {
   useEffect(()=>{
@@ -37,145 +40,9 @@ export default function Home() {
       <main className="flex flex-col wrapper text-xl sm:text-2xl">
         {/* <Sidebar/> */}
         <div className='w-[100%] md:min-w-[760px]'>
-        <section id='introductionm' className="mx-auto relative w-full mb-2 flex flex-col items-center justify-around text-black">
-          <div className='lg:max-w-[1200px] mx-auto'>
-          <h2 className="text-black text-3xl title z-[101] text-center" data-aos="fade-up">Hi, my name is</h2>
-          <div className="flex items-center relative h-[90px] w-[150px] mx-auto" data-aos="fade-up">
-                <div className="text-4xl absolute bottom-[43px] left-[0px] text-blue2 title">Christian</div>
-                <div className="text-3xl absolute bottom-[20px] left-[45px] text-blue title2">Chitanu</div>
-                <div className='absolute lineaway bg-whitewhite h-[90px] z-[100] bottom-[2px] w-[190px] flex items-center justify-start'>
-                  <div className="line w-[25px] h-[100px] bg-blue2 bottom-[0px] left-[200px] bg-line"></div>
-                </div>
-          </div>
-          <div className='flex flex-col mx-auto items-center md:flex-row md:justify-between md:items-start lg:max-w-[1000px] w-[90%] lg:min-w-[770px] md:min-w-[720px]'>
-            <div className=' w-[55%] text-justify title mb-[20px] md:mb-[0px] md:mr-[20px] min-w-[300px]'>
-              I am currently a <br/><span className='text-5xl text-blue2'>Fullstack</span><br/> <span className='text-6xl text-blue'>Web Developer</span><br/>
-              working at <a href="https://www.cryptureworld.com/" target="_blank" rel="noreferrer" className='underline text-black transition ease-in-out duration-300 hover:text-link'>Crypture World Inc.
-              </a> assisting in the development of <span className='text-3xl text-blue2'>frontend</span> and <span className='text-3xl text-blue2'>backend</span> services.
-            </div>
-            <div className='h-[400px] relative w-[60%] max-w-[390px] min-w-[300px] text-justify' data-aos="fade-left" data-aos-delay="1300">
-              <img className='😀 absolute z-[2] w-[170px] sm:w-[200px] top-[20px] left-[20px] sm:top-[0px] sm:left-[0px]' width={200} alt={"Project Crypture World"} src={"/images/project1.png"}/>
-              <img className='😀 absolute z-[1] blur-[0.1px] w-[170px] sm:w-[200px] top-[130px] left-[120px]  sm:top-[150px] sm:left-[180px]' width={200} alt={"Project Code Example"} src={"/images/project2.png"}/>
-              <img className='😀 absolute z-[1] top-[60px] left-[180px] sm:top-[40px] sm:left-[200px] blur-[0.2px] w-[120px] sm:w-[170px]' width={170} alt={"Project Github Example"} src={"/images/project3.png"}/>
-              <img className='😀 absolute z-[0] top-[150px] left-[20px] sm:top-[130px] sm:left-[20px] blur-[0.8px] w-[100px] sm:w-[150px]' width={150} alt={"Project Flask API Example"} src={"/images/project4.png"}/>
-            </div>
-          </div>
-          <div>
-
-          </div>
-          </div>
-        </section>
-        <section className="relative w-full mb-10 flex flex-col items-center justify-center text-black w-full">
-            <div className='lg:max-w-[1200px] mx-auto'>
-            <h2 className="text-black text-xl title2 ml-5" data-aos="fade-in" data-aos-offset="300">How I work</h2>
-            <h2 className="text-black text-6xl title1 ml-5" data-aos="fade-left" data-aos-offset="300">Soft Skills</h2>
-            {/* introduce softskill */}
-            <div className='grid sm:grid-cols-2 grid-cols-1 gap-10 mt-5'>
-              <div id="gridItem" className='mx-auto w-[90%] text-xl' data-aos="fade-right" data-aos-offset="300">
-                <h2 className="text-black text-3xl title font-bold">Analytical Skills</h2>
-                <div>
-                  <span className='font-bold'>Find ideas.</span> Since designing the logic of a website can be approached in many ways, there are many strategies that are beneficial in delivering a feature. But not all ideas are fit for the product the customer wants. It is my responsibility to analyse solutions and find what is best for the client.
-                </div>
-              </div>
-              <div id="gridItem" className='mx-auto w-[90%] text-xl' data-aos="fade-left" data-aos-offset="300">
-                <h2 className="text-black text-3xl title font-bold">Time Management</h2>
-                <div>
-                  <span className='font-bold'>Plan ahead.</span> In conceptualizing project roadmaps, I plan out the development process and construct specific deadlines. Since in the end it is on the customer&apos;s best interest to have a completed product and I always aim to deliver.
-                </div>
-              </div>
-              {/* Last item will contain the  sm:col-span-2 sm:w-[50%]  so it'll be when (list.length % 2 == 0 && iteration == list.length - 1) */}
-              <div id="gridItem" className='mx-auto w-[90%] text-xl sm:col-span-2 sm:w-[50%]' data-aos="fade-up" data-aos-offset="300">
-                <h2 className="text-black text-3xl title font-bold">Creative Problem Solving</h2>
-                <div>
-                  <span className='font-bold'>Most beneficial solution.</span> Before finalizing a solution, I think if solutions to a problem are long term and fit the interests of the client. Solving these problems in a creative manner allows me to deliver implementations that exceeds client expectations.  
-                </div>
-
-              </div>
-
-              
-            </div>
-            </div>
-        </section>
-        <section className="relative w-full mb-2 flex flex-col items-center justify-center text-black bg-whitewhite" style={{boxShadow:"white 0px -10px 50px 10px"}}>
-            <div className='w-[100%] max-w-[1200px]'>
-            <h2 className="text-black text-6xl title1 mb-2 text-center">Projects</h2>
-            {/* introduce hardskills (in progress)*/}
-              <CarouselExport/>
-              <div className='grid grid-cols-1 gap-4 mt-5'>
-                
-              <div className='mx-auto w-[90%]'>
-                <h2 className="text-blue text-4xl title text-center md:text-left mb-5" data-aos="fade-right">Crypture World</h2>
-                <div className='flex flex-col md:flex-row max-w-[1200px] mb-7'>
-                  <div className='w-[100%] mx-auto flex flex-col items-center md:mr-3' data-aos="fade-right">
-                    <img width={300} alt={"Project Crypture World"} src={"/images/project1.png"}/>
-                    <div className='title2 w-[300px] text-base flex justify-around items-end ml-[10px]'>
-                      <a target="_blank" rel='noopener noreferrer' className='flex items-end text-blue transition ease-in-out duration-300 hover:text-link' href="https://www.cryptureworld.com"><img style={{width:40}} src={'/images/computer-line.svg'}/>Preview</a> <span className='text-stone-500'>Private Repository</span>
-                    </div>
-                  </div>
-                  <div className='flex flex-col items-center md:items-start' data-aos="fade-left">
-                    <p className='text-center md:text-left text-base w-[90%] max-w-[1200px]'>
-                      This app is hosted on a <a target="_blank" rel='noopener noreferrer'  className='text-blue transition ease-in-out duration-300 hover:text-link' href="https://aws.amazon.com/amplify">AWS Amplify plan</a> with a CI/CD pipeline activated supporting real time updates when the github repo gets updated
-                    </p>
-                    <div className='flex justify-between w-[60%] mt-6'>
-                      <div className='mr-4'>
-                      <h2>
-                        Technologies
-                      </h2>
-                      <ul className='marker:text-blue2 text-base list-disc ml-7'>
-                        <li>
-                          NextJS
-                        </li>
-                        <li>
-                          ReactJS
-                        </li>
-                        <li>
-                          CSS3
-                        </li>
-                        <li>
-                          HTML5
-                        </li>
-                        <li>
-                          WaxJs
-                        </li>
-                      </ul>
-                      </div>
-                      <div>
-                      <h2>
-                        Libraries
-                      </h2>
-                      <ul className='marker:text-blue2 text-base list-disc ml-7'>
-                        <li>
-                          I18Next
-                        </li>
-                        <li>
-                          Scroll-Out
-                        </li>
-                      </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <ProjectInfo/>
-              </div>
-              <div className='mx-auto w-[90%]'>
-                <h2 className="text-black text-xl title">Time Management</h2>
-                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
-              </div>
-              <div className='mx-auto w-[90%]'>
-                <h2 className="text-black text-xl title">Project Planning</h2>
-                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
-
-              </div>
-              <div className='mx-auto w-[90%]'>
-                <h2 className="text-black text-xl title">Creative Problem Solving</h2>
-                <div>Irure elit excepteur nisi ex. Ad voluptate est ex pariatur duis veniam proident laborum reprehenderit cupidatat pariatur est exercitation. Sit laborum incididunt proident ullamco.</div>
-
-              </div>
-
-              
-            </div>
-            </div>
-        </section>
+        <Introduction/>
+        <SoftSkills/>
+        <Projects/>
         {/* 
           //introduction
           //experience
@@ -184,7 +51,9 @@ export default function Home() {
           //contact
         */}
         </div>
+
       </main>
+      <Footer/>
     </div>
   )
 }

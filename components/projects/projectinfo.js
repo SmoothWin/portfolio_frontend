@@ -6,7 +6,7 @@ const ProjectInfo = ()=>{
 
     
     return(
-        <>
+        <div className="relative">
             <div className={`transition-all w-full text-center duration-300 ease-in-out cursor-pointer z-10 hover:text-blue2 text-black ${(on)?"d-hide-delay":"d-show-delay"}`} onClick={()=>{
             setOn(!on)
             if(!on){
@@ -43,7 +43,7 @@ const ProjectInfo = ()=>{
                     <div className='text-base'>Laboris excepteur est sunt anim aute nulla reprehenderit exercitation consectetur anim. Magna minim nisi nulla officia. Tempor sint dolor nisi irure voluptate nostrud quis sit labore. Elit consequat veniam consectetur tempor commodo sint cupidatat deserunt ullamco cupidatat cupidatat veniam. Ipsum laborum magna et pariatur irure ut in enim cillum. Tempor laborum minim ipsum eu in reprehenderit cillum cupidatat dolor id excepteur aliqua. Ut cupidatat irure nisi reprehenderit non in in esse nulla mollit enim laborum in consequat.</div>
                   </div>
         </div>
-        </>
+        </div>
     )
 }
 
