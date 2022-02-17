@@ -5,7 +5,7 @@ const Introduction = ({introduction, url})=>{
   const data = introduction.data[0].attributes
   const images = data.images.data.map(x=>x.attributes.url)
   useEffect(()=>{
-    console.log(url)
+    // console.log(data)
   })
   
     return (
