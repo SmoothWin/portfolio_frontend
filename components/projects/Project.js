@@ -1,4 +1,4 @@
-import ProjectInfo from "./Projectinfo"
+import ProjectInfo from `${__dirname}/Projectinfo`
 
 const Project = ({project, url})=>{
     // console.log(project.technologies.technologies)
