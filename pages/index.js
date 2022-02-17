@@ -11,8 +11,9 @@ import Introduction from '../components/Sections/Introduction'
 import SoftSkills from '../components/Sections/SoftSkills'
 import Projects from '../components/Sections/Projects'
 import Footer from '../components/Sections/Footer'
+import axios from 'axios'
 
-export default function Home() {
+export default function Home({softskillsData, introductionData, hardskillCarouselData, projectsData, urlData}) {
   useEffect(()=>{
     Aos.init({
       easing:'ease-in-out',
@@ -40,9 +41,9 @@ export default function Home() {
       <main className="flex flex-col wrapper text-xl sm:text-2xl">
         {/* <Sidebar/> */}
         <div className='w-[100%] md:min-w-[760px]'>
-        <Introduction/>
-        <SoftSkills/>
-        <Projects/>
+        <Introduction url={urlData} introduction={introductionData}/>
+        <SoftSkills url={urlData} softskills={softskillsData}/>
+        <Projects url={urlData} projects={projectsData} hardskillCarousel={hardskillCarouselData}/>
         {/* 
           //introduction
           //experience
@@ -56,4 +57,26 @@ export default function Home() {
       <Footer/>
     </div>
   )
+}
+
+export const getStaticProps = async (context) => {
+  try{
+  const response = await axios.get(`${process.env.BACKEND}/api/softskills`,{headers:{Authorization: `bearer ${process.env.APIKEY}`}})
+  const response2 = await axios.get(`${process.env.BACKEND}/api/introductions?populate=*`,{headers:{Authorization: `bearer ${process.env.APIKEY}`}})
+  const response3 = await axios.get(`${process.env.BACKEND}/api/hardskill-carousels`,{headers:{Authorization: `bearer ${process.env.APIKEY}`}})
+  const response4 = await axios.get(`${process.env.BACKEND}/api/projects?populate=*`,{headers:{Authorization: `bearer ${process.env.APIKEY}`}})
+  const backendUrl = process.env.BACKEND
+  return {
+        props: {
+            introductionData:response2.data,
+            softskillsData: response.data,
+            hardskillCarouselData: response3.data,
+            projectsData: response4.data,
+            urlData:backendUrl
+        }
+    }
+  }catch(e){
+    console.log(e)
+  }
+
 }
