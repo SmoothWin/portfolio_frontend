@@ -1,7 +1,6 @@
-import ProjectInfo from `${__dirname}/Projectinfo`
+import ProjectInfo from "./Projectinfo"
 
 const Project = ({project, url})=>{
-    // console.log(project.technologies.technologies)
     return(
         <div className='mx-auto w-[90%]'>
                 <h2 className="text-blue text-4xl title text-center md:text-left mb-5" data-aos="fade-right">{project.projectTitle}</h2>
