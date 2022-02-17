@@ -13,8 +13,8 @@ const Projects = ({projects,hardskillCarousel, url})=>{
             {/* introduce hardskills (in progress)*/}
               <CarouselExport hardskillCarousel={hardskillCarousel}/>
               <div className='grid grid-cols-1 gap-4 mt-5'>
-                {projects.data.map(x=>
-                <Project url={url} project={x.attributes}/>
+                {projects.data.map((x,i)=>
+                <Project key={i} url={url} project={x.attributes}/>
                 )}
               </div>
             </div>

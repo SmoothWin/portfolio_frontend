@@ -5,7 +5,7 @@ const Footer = ()=>{
                 <h2 className="title2 text-md sm:text-xl mb-5" style={{color:"grey"}}>Want to talk?</h2>
                 <h2 className="title text-3xl sm:text-5xl mb-5">Let&apos;s get in contact</h2>
                 <p className="title text-md sm:text-xl w-[70%]">If you are looking for a potential fullstack web developer for creating the perfect website you need, feel free
-                 to <a className="hover:underline text-white transition ease-in-out duration-300 text-link" href="mailto:christian.chitanu@hotmail.com">contact me.</a> Let's work together and make this into a fun experience!</p>
+                 to <a className="hover:underline text-white transition ease-in-out duration-300 text-link" href="mailto:christian.chitanu@hotmail.com">contact me.</a> Let&apos;s work together and make this into a fun experience!</p>
                  <a href="mailto:christian.chitanu@hotmail.com" className="title mt-8 text-md bg-blue rounded-md p-4 px-5 transition ease-in duration-200 hover:bg-blue2">christian.chitanu@hotmail.com</a>
                 <div className="flex h-20 items-center">
                     <a target={"__blank"} rel={"noopener noreferrer"} href="https://www.facebook.com/christian.chitanu/" className="w-10 mx-3 invert-[0.5] transition duration-300 hover:invert">

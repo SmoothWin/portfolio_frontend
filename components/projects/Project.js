@@ -26,8 +26,8 @@ const Project = ({project, url})=>{
                         Technologies
                       </h2>
                       <ul className='marker:text-blue2 text-base list-disc ml-7'>
-                          {project.technologies.technologies.map(x=>
-                                    <li>
+                          {project.technologies.technologies.map((x,i)=>
+                                    <li key={i}>
                                         {x}
                                     </li>
                           )}
@@ -38,8 +38,8 @@ const Project = ({project, url})=>{
                         Libraries
                       </h2>
                       <ul className='marker:text-blue2 text-base list-disc ml-7'>
-                      {project.technologies.libraries.map(x=>
-                                    <li>
+                      {project.technologies.libraries.map((x,i)=>
+                                    <li key={i}>
                                         {x}
                                     </li>
                           )}

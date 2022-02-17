@@ -46,8 +46,8 @@ const ProjectInfo = ({project})=>{
                     <h2>Notable Features</h2>
                     <div className='text-base'>
                       <ul className="marker:text-blue2 text-base list-disc ml-5 sm:ml-7">
-                        {project.notableFeatures.features.map(x=>
-                          <li>
+                        {project.notableFeatures.features.map((x,i)=>
+                          <li key={i}>
                             {x}
                           </li>
                           )}

@@ -24,13 +24,13 @@ const CarouselExport = ({hardskillCarousel})=>{
       <div className={`flex absolute left-0 infinite-scroll`} style={{width:`${Object.entries(devIcons).length*50}%`}}>
         <div className="flex justify-around w-[50%]">
           {Object.entries(devIcons).map(x=>
-            <img width={50} alt={x[0]} src={x[1]} />
+            <img key={x[0]} width={50} alt={x[0]} src={x[1]} />
             )
           }
         </div>
         <div className="flex justify-around w-[50%]">
         {Object.entries(devIcons).map(x=>
-            <img width={50} alt={x[0]} src={x[1]} />
+            <img key={x[0]} width={50} alt={x[0]} src={x[1]} />
             )
           }
         </div>
