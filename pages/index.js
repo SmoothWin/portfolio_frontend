@@ -5,12 +5,12 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 
 //custom components
-import Sidebar from "../components/sidebar/Sidebar"
+import Sidebar from "../components/sidebar/sidebar"
 
-import Introduction from '../components/sections/Introduction'
-import SoftSkills from '../components/sections/SoftSkills'
-import Projects from '../components/sections/Projects'
-import Footer from '../components/sections/Footer'
+import Introduction from '../components/sections/introduction'
+import SoftSkills from '../components/sections/softSkills'
+import Projects from '../components/sections/projects'
+import Footer from '../components/sections/footer'
 import axios from 'axios'
 
 export default function Home({softskillsData, introductionData, hardskillCarouselData, projectsData, urlData}) {

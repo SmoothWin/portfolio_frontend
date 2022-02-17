@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import CarouselExport from "../Carousel"
-import Project from "../projects/component/Project"
+import CarouselExport from "../carousel"
+import Project from "../projects/component/project"
 
 const Projects = ({projects,hardskillCarousel, url})=>{
   useEffect(()=>{
