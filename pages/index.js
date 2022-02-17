@@ -7,10 +7,10 @@ import Aos from 'aos'
 //custom components
 import Sidebar from "../components/sidebar/Sidebar"
 
-import Introduction from '../components/Sections/Introduction'
-import SoftSkills from '../components/Sections/SoftSkills'
-import Projects from '../components/Sections/Projects'
-import Footer from '../components/Sections/Footer'
+import Introduction from '../components/sections/Introduction'
+import SoftSkills from '../components/sections/SoftSkills'
+import Projects from '../components/sections/Projects'
+import Footer from '../components/sections/Footer'
 import axios from 'axios'
 
 export default function Home({softskillsData, introductionData, hardskillCarouselData, projectsData, urlData}) {
