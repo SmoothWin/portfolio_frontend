@@ -33,8 +33,8 @@ const Introduction = ({introduction, url})=>{
               </div>
             </div>
           </div>
-          <div className="flex items-center" data-aos="fade-in">
-            <span className="mr-3">Here is my</span> <a href="/cchitanu_cv_english.pdf" download={true} className="title bg-blue text-whitewhite rounded-md p-4 px-5 transition ease-in duration-200 hover:bg-blue2">Curriculum Vitae</a>
+          <div className="flex flex-col justify-center items-center sm:flex-row sm:items-center" data-aos="fade-in">
+            <span className="mr-3 mb-2 sm:mb-0">Here is my</span> <a href="/cchitanu_cv_english.pdf" download={true} className="title bg-blue text-whitewhite rounded-md p-4 px-5 transition ease-in duration-200 hover:bg-blue2">Curriculum Vitae</a>
           </div>
         </section>
     )
