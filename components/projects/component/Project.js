@@ -1,4 +1,4 @@
-import ProjectInfo from "./Projectinfo"
+import ProjectInfo from "../Projectinfo"
 
 const Project = ({project, url})=>{
     return(
