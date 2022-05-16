@@ -6,6 +6,7 @@ const SoftSkills = ({softskills})=>{
 
   },[])
     return (
+      softskills == null?null:
         <section className="relative w-full mb-10 flex flex-col items-center justify-center text-black w-full">
             <div className='lg:max-w-[1200px] mx-auto'>
             <h2 className="text-black text-xl title2 ml-5" data-aos="fade-in" data-aos-offset="300">How I work</h2>
