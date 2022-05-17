@@ -77,6 +77,13 @@ export const getStaticProps = async (context) => {
     }
   }catch(e){
     console.log(e)
+    return {props:{
+      introductionData:null,
+      softskillsData: null,
+      hardskillCarouselData: null,
+      projectsData: null,
+      urlData:""
+    }}
   }
 
 }
