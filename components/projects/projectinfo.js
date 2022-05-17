@@ -26,23 +26,23 @@ const ProjectInfo = ({project})=>{
             }}
             >
                   
-                  <div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-right">
+                  {project.myRole &&<div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-right">
                     <h2>My Role</h2>
                     <div className='text-base'>{project.myRole}</div>
-                  </div>
-                  <div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-left">
+                  </div>}
+                  {project.projectDifficulties &&<div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-left">
                     <h2>Project Difficulties</h2>
                     <div className='text-base'>
                       {project.projectDifficulties}
                     </div>
-                  </div>
-                  <div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-right">
+                  </div>}
+                  {project.mySolution &&<div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-right">
                     <h2>My Solution</h2>
                     <div className='text-base'>
                       {project.mySolution}
                     </div>
-                  </div>
-                  <div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-left">
+                  </div>}
+                  {project.notableFeatures &&<div className='md:mx-5 mb-3 max-w-[500px] mx-auto' data-aos="fade-left">
                     <h2>Notable Features</h2>
                     <div className='text-base'>
                       <ul className="marker:text-blue2 text-base list-disc ml-5 sm:ml-7">
@@ -53,7 +53,7 @@ const ProjectInfo = ({project})=>{
                           )}
                       </ul>
                     </div>
-                  </div>
+                  </div>}
         </div>
         </div>
     )

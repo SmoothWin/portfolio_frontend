@@ -28,9 +28,9 @@ const Introduction = ({introduction, url})=>{
               </div>
               <div className='h-[400px] relative w-[60%] max-w-[390px] min-w-[300px] text-justify' data-aos="fade-left" data-aos-delay="1300">
                 <img className='😀 absolute z-[2] w-[170px] sm:w-[200px] top-[20px] left-[20px] sm:top-[0px] sm:left-[0px]' width={200} alt={"Project Crypture World"} src={url+images[3]}/>
-                <img className='😀 absolute z-[1] blur-[0.1px] w-[170px] sm:w-[200px] top-[130px] left-[120px]  sm:top-[150px] sm:left-[180px]' width={200} alt={"Project Code Example"} src={url+images[2]}/>
-                <img className='😀 absolute z-[1] top-[60px] left-[180px] sm:top-[40px] sm:left-[200px] blur-[0.2px] w-[120px] sm:w-[170px]' width={170} alt={"Project Github Example"} src={url+images[0]}/>
-                <img className='😀 absolute z-[0] top-[150px] left-[20px] sm:top-[130px] sm:left-[20px] blur-[0.8px] w-[100px] sm:w-[150px]' width={150} alt={"Project Flask API Example"} src={url+images[1]}/>
+                <img className='😀 absolute z-[1] w-[170px] sm:w-[200px] top-[130px] left-[120px]  sm:top-[150px] sm:left-[180px]' width={200} alt={"Project Code Example"} src={url+images[2]}/>
+                <img className='😀 absolute z-[1] top-[60px] left-[180px] sm:top-[40px] sm:left-[200px] w-[120px] sm:w-[170px]' width={170} alt={"Project Github Example"} src={url+images[0]}/>
+                <img className='😀 absolute z-[0] top-[150px] left-[20px] sm:top-[130px] sm:left-[20px] w-[100px] sm:w-[150px]' width={150} alt={"Project Flask API Example"} src={url+images[1]}/>
               </div>
             </div>
           </div>
