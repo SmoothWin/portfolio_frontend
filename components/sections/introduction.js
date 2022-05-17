@@ -2,13 +2,14 @@ import { useEffect } from "react"
 const url = process.env.backend
 
 const Introduction = ({introduction, url})=>{
-  const data = introduction.data[0].attributes
-  const images = data.images.data.map(x=>x.attributes.url)
+  const data = introduction?.data[0].attributes
+  const images = data?.images.data.map(x=>x.attributes.url)
   useEffect(()=>{
     // console.log(data)
-  })
+  },[])
   
     return (
+      (introduction == null)?null:
         <section id='introductionm' className="mx-auto relative w-full mb-2 flex flex-col items-center justify-around text-black">
           <div className='lg:max-w-[1200px] mx-auto'>
           <h2 className="text-black text-3xl title z-[101] text-center" data-aos="fade-up">{data.hi}</h2>

@@ -7,6 +7,7 @@ const Projects = ({projects,hardskillCarousel, url})=>{
     // console.log(projects.data)
   },[])
     return(
+      projects==null?null:
         <section className="relative w-full mb-2 flex flex-col items-center justify-center text-black bg-whitewhite" style={{boxShadow:"white 0px -10px 50px 10px"}}>
             <div className='w-[100%] max-w-[1200px]'>
             <h2 className="text-black text-6xl title1 mb-2 text-center">Projects</h2>
